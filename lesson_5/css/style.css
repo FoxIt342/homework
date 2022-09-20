@@ -84,10 +84,10 @@ img {
     text-shadow: 2px -2px 2px;
 }
 .block-light > p {
-    color: #3e2828;
+    color: #972828;
 }
 .text.italic * {
-    color: red;
+    color: #860808;
 }
 p ~ ul {
     font-style: oblique;
