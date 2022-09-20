@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass-Regular.woff2') format('woff2'),
+        url('../fonts/Overpass-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass-Bold.woff2') format('woff2'),
+        url('../fonts/Overpass-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: Overpass, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    background-color: #fbf0e3;
+    margin: 20px 50px;
+}
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    text-shadow: 2px -2px 2px #6494ed;
+    letter-spacing: 2px;
+}
+h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: oblique;
+    color: rgba(20, 19, 19, 0.514);
+    text-align: justify;
+}
+h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+img {
+    max-width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#top,
+#down {
+    font-size: 18px;
+    text-decoration: underline;
+    background-color: #c04e24;
+}
+.text {
+    text-indent: 20px;
+}
+.block {
+    padding: 5px 6px;
+}
+.text.italic {
+    font-style: italic;
+}
+.block .text.final {
+    font-family: Overpass, sans-serif;
+    font-weight: 700;
+}
+.text .underlined {
+    text-decoration: underline;
+    text-shadow: none;
+    color: #6494ed;
+}
+.underlined .blue {
+    color: blue;
+}
+.number {
+    text-shadow: 2px -2px 2px;
+}
+.block-light > p {
+    color: #3e2828;
+}
+.text.italic * {
+    color: red;
+}
+p ~ ul {
+    font-style: oblique;
+}
+h2 + p {
+    color: #073053;
+    font-weight: 700;
+}
