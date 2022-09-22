@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Regular'), local('Lato-Regular'), url('../fonts/latoregular.woff2') format('woff2'), url('../fonts/latoregular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+ }
+ @font-face {
+    font-family: 'Lato';
+    src: local('Lato Bold'), local('Lato-Bold'), url('../fonts/latobold.woff2') format('woff2'), url('../fonts/latobold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+ }
+ @font-face {
+    font-family: 'Lato';
+    src: local('Lato Black'), local('Lato-Black'), url('../fonts/latoblack.woff2') format('woff2'), url('../fonts/latoblack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+ }
+ body {
+   font-family: Lato, serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 160%;
+   color: #424551;
+   width: 810px;
+   height: auto;
+   margin: 0 auto;
+ }
+ h1 {
+    font-family: Lato, serif;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 59.8px;
+    color: #1E212C;
+    margin-bottom: 81px;
+ }
+ img {
+    max-width: 100%;
+    height: 360px;
+    top: 402px;
+    left: 345px;
+    border-radius: 4px;
+    margin-bottom: 60px;
+ }
+ .bold {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 30px;
+   color: #1E212C;
+   margin-bottom: 24px;
+ }
+ .paragraph-one {
+   margin-bottom: 26px;
+ }
+ .quote {
+   margin: 48px 0px;
+   padding-left: 58px;
+ }
+.block p,
+.block ul {
+   margin-bottom: 24px;
+}
+li {
+   margin-bottom: 4px;
+   padding-left: 32px; 
+}
+.field {
+   border: 3px dotted black;
+   max-width: 250px;
+   max-height: 250px;
+   padding: 10px;
+   margin: 25px;
+   overflow: auto;
+}
+.hiding-field {
+   border: 3px double black;
+   padding: 15px;
+   margin: 0 auto;
+   margin-bottom: 25px;
+   border-radius: 15% 85% 82% 18% / 49% 71% 29% 51%;
+   width: 342px;
+   height: 342px;
+   overflow: hidden;
+   box-shadow: inset 4px 4px 4px 4px;
+   background-color: #188460;
+   opacity: 0.6;
+}
+#button {
+   color: #141460;
+   font-size: 16px;
+   font-weight: 700;
+}
+.text1,
+.text2,
+.text3 {
+   font-size: 30px;
+   padding: 15px;
+   display: inline-block;
+   color: azure;
+   margin: 25px 0;
+   align-content: center;
+}
+.block-section {
+   font-size: 0;
+}
+.text1 {
+   background-color: #188460;
+}
+.text2 {
+   background-color: #812828;
+}
+.text3 {
+   background-color: #1f1f75;
+}
