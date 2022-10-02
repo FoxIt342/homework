@@ -1,0 +1,303 @@
+@font-face {
+   font-family: 'Lato';
+   src: local('Lato Regular'), local('Lato-Regular'), url('../fonts/latoregular.woff2') format('woff2'), url('../fonts/latoregular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Lato';
+   src: local('Lato Bold'), local('Lato-Bold'), url('../fonts/latobold.woff2') format('woff2'), url('../fonts/latobold.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Lato';
+   src: local('Lato Black'), local('Lato-Black'), url('../fonts/latoblack.woff2') format('woff2'), url('../fonts/latoblack.woff') format('woff');
+   font-weight: 900;
+   font-style: normal;
+}
+.template {
+   font-family: Lato, sans-serif;
+   line-height: 25.6px;
+   color: #424551;
+   max-width: 620px;
+   margin: 0 auto;
+}
+.page-title {
+font-weight: 900;
+font-size: 56px;
+margin: 0 auto;
+max-width: 620px;
+text-align: center;
+color: #1E212C;
+line-height: 59.8px;
+}
+.header {
+   margin-bottom: 40px;
+}
+[class*="__title"] {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 59.8px;
+   color: #1E212C;
+}
+.block-one__title {
+   margin-bottom: 40px;
+}
+.text {
+   margin-bottom: 48px;
+}
+h3.block-one-2__title {
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 24px;
+   margin-bottom: 24px;
+}
+.list-item {
+   background: url(../img/icons/check.png) 0 5px no-repeat;
+   padding-left: 30px;
+}
+ul li:not(:last-child){
+   margin-bottom: 4px;
+}
+.block-one__container {
+   margin-bottom: 50px;
+}
+.title-top__container {
+   font-weight: 700;
+   line-height: 24px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: #1E212C;
+   margin-bottom: 8px;
+}
+.block-two__title {
+   margin-bottom: 16px;
+}
+.title-bottom__container {
+   font-size: 20px;
+   line-height: 24px;
+   color: #787A80;
+   margin-bottom: 32px;
+}
+.block-two__list {
+   font-weight: 700;
+   margin-bottom: 32px;
+}
+.course-highlights li:first-child {
+   background: url(../img/icons/Star.png) 0 center no-repeat;
+   padding-left: 24px;
+}
+.course-highlights li:nth-child(2) {
+   background: url(../img/icons/Play.png) 0 center no-repeat;
+   padding-left: 24px;
+}
+.course-highlights li:last-child {
+   background: url(../img/icons/Profile.png) 0 center no-repeat;
+   padding-left: 24px;
+}
+
+.new-info__container {
+   max-width: 620px;
+   margin: 0 auto;
+   margin-bottom: 30px;
+}
+.links__container > .block {
+   display: inline-block;
+   font-size: 20px;
+   padding: 15px;
+}
+.link:hover {
+   color: #14d46e;
+}
+.link:focus {
+   outline: 3px solid #ffdd00;
+}
+.link:visited {
+   color: #67074a;
+}
+.hidden-paragraph {
+   display: none;
+}
+.hidden-paragraph:target {
+   display: block;
+}
+.random-list {
+   counter-reset: item;
+   font-size: 20px;
+}
+.list3 {
+   padding-left: 10px;
+}
+.list2-item::before {
+   counter-increment: item;
+   content: counter(item) ") ";
+}
+.list2-item > ol {
+   counter-reset: item;
+}
+.list2-subitem::before {
+   counter-increment: item;
+   content: counter(item, lower-roman) ". ";
+}
+.random-list li:first-of-type {
+   text-decoration: underline;
+}
+ol > li:nth-child(odd) {
+   color: #ce1c98;
+}
+ul ol {
+   display: none;
+}
+ul li:hover ol {
+   display: block;
+}
+
+.game {
+   max-width: 800px;
+   padding: 0 10px;
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 25px;
+}
+
+.game-button {
+   display: inline-block;
+   padding: 5px;
+   font-size: 18px;
+   font-weight: 700;
+   border: 2px solid #a2e80a;
+   background: #a2e80a;
+   border-radius: 50%;
+   margin-bottom: 25px;
+   box-shadow: 0 9px #999999;
+}
+.game-button:hover {
+   background-color: #14d46e;
+   border: 2px solid #14d46e;
+}
+.game__container {
+   border: solid #031248 5px;
+   background: #76b90baf;
+   width: 800px;
+   height: 600px;
+   padding: 15px;
+   margin: 0 auto;
+   display: none;
+}
+.game__container:target {
+   display: block;
+}
+.title__container {
+   text-transform: uppercase;
+   font-size: 40px;
+   font-family: Lato, sans-serif;
+   font-weight: 900;
+   color: #131370;
+   text-shadow: 5px 5px 5px;
+   margin-bottom: 25px;
+}
+.block1 {
+   border: 2px solid #496707;
+   background: url(../img/start.png) no-repeat center / cover;
+   border-radius: 5px;
+   width: 70px;
+   height: 35px;
+   margin: 0 auto;
+}
+.block2 {
+   border: 2px solid #67074a;
+   background: #67074a;
+   width: 25px;
+   height: 150px;
+   margin: 0 365px;
+   visibility: hidden;
+}
+.block3 {
+   border: 2px solid #300798fb;
+   background: #300798;
+   width: 190px;
+   height: 25px;
+   margin: 0 365px;
+   visibility: hidden;
+}
+.block4 {
+   border: 2px solid #939807;
+   background: #939807;
+   width: 35px;
+   height: 160px;
+   margin: 0 520px;
+   visibility: hidden;
+}
+.block5 {
+   border: 2px solid #ae1c15;
+   background: #ae1c15;
+   width: 335px;
+   height: 35px;
+   margin: 0 220px;
+   visibility: hidden;
+}
+.block6 {
+   border: 2px solid #09cce2;
+   background: #09cce2;
+   width: 30px;
+   height: 100px;
+   margin: 0 220px;
+   visibility: hidden;
+}
+.block7 {
+   border: 2px solid #e20909;
+   background: url(../img/well_done.png) no-repeat center / cover;
+   width: 130px;
+   height: 60px;
+   margin: 0 120px;
+   visibility: hidden;
+}
+.block1:hover + .block2,
+.block2:hover {
+   visibility: visible;
+}
+.block2:hover + .block3,
+.block3:hover {
+   visibility: visible;
+}
+.block3:hover + .block4,
+.block4:hover {
+   visibility: visible;
+}
+.block4:hover + .block5,
+.block5:hover {
+   visibility: visible;
+}
+.block5:hover + .block6,
+.block6:hover {
+   visibility: visible;
+}
+.block6:hover + .block7,
+.block7:hover {
+   visibility: visible;
+}
+footer {
+   max-width: 620px;
+   margin: 0 auto;
+
+}
+.footer-link {
+   max-width: fit-content;
+   margin: 0 auto;
+   padding: 5px;
+   font-size: 18px;
+   border: 2px solid #031248;
+   background: #496707;
+   border-radius: 25%;
+   margin-bottom: 25px;
+}
+.footer-link:hover {
+   text-decoration: underline;
+}
+.footer-link:active {
+   color: #ae1c15;
+}
+.footer-link:visited {
+   color: #131370;
+}
