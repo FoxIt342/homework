@@ -1,0 +1,27 @@
+body {
+   background: rgba(136, 134, 127, 0.411);
+   max-width: 1000px;
+   margin: 0 auto;
+   margin-top: 30px;
+}
+.headline {
+   margin-bottom: 25px;
+   line-height: 35px;
+   font-size: 25px;
+}
+.colors {
+   background: #e5bedd;
+}
+.red {
+   background: #e52323;
+}
+.green {
+   background: #058505;
+}
+.blue {
+   background: #2323d7;
+}
+[class*="image"] {
+   max-width: 1000px;
+   margin-bottom: 20px;
+}
