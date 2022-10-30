@@ -1,0 +1,107 @@
+.wrapper {
+   overflow: hidden;
+   min-height: 100%;
+   position: relative;
+}
+body {
+   background: rgba(145, 137, 137, 0.415);
+   max-width: 1250px;
+   margin: 0 auto;
+}
+.transform {
+   margin: 50px;
+}
+.transform__item {
+   border-radius: 50%;
+   width: 300px;
+   height: 300px;
+   background: #9e7756 url("/img/vortex-syndrome.svg");
+   margin: 0 auto;
+   margin-bottom: 25px;
+}
+
+.transform__text {
+   text-align: center;
+   padding-top: 70px;
+   font-size: 25px;
+   color: #f0f8ff;
+   font-weight: 700;
+
+}
+.transform__item.translate:hover {
+   transform: translate(30px,-30px);
+}
+.transform__item.scale:hover {
+   transform: scale(1.5)
+}
+.transform__item.rotate:hover {
+   transform: rotate(360deg);
+   transition: all 3s 0.5s;
+}
+.transform__item.skew:hover {
+   transform: skew(15deg,15deg);
+}
+.transform__item.transform-origin:hover {
+   transform-origin: 30px 30px;
+   transform: rotate(-45deg);
+}
+.transform__item.flip:hover {
+   transform: rotateY(180deg);
+	background-color: rgb(209, 91, 11);
+	transition: all 1.5s ease 0s;
+}
+
+.field__container {
+   background: url("../img/sunflower-field-hungary.jpg") center no-repeat;
+   background-size: contain;
+   margin: 0 auto;
+   position: relative;
+   min-width: 800px;
+   min-height: 800px;
+}
+.cow img {
+   width: 600px;
+   position: absolute;
+   left: 25px;
+   top: 250px;
+}
+.bell__body {
+   width: 100px;
+   height: 100px;
+   background: rgba(0, 0, 255, 0);
+   position: absolute;
+   left: 130px;
+   top: 500px;
+}
+.bell__item {
+   width: 100px;
+   height: 100px;
+   background: rgba(0, 0, 0, 0) url("../img/bell.png") no-repeat;
+   background-size: cover;
+
+
+}
+.bell__body:hover {
+   transform-origin: top left;
+   transform: rotate(80deg);
+   transition: transform 5s;
+}
+.hat img {
+   width: 150px;
+   position: absolute;
+   left: 160px;
+   top: 250px;
+}
+.hat:hover img {
+   transform: translate(30px, -30px) scale(2);
+}
+.sunglasses img {
+   width: 160px;
+   position: absolute;
+   left: 110px;
+   top: 360px;
+   transform: rotate(30deg);
+}
+.sunglasses:hover img {
+   transform: rotateY(180deg);
+}
