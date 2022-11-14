@@ -128,7 +128,6 @@ top: 5px;
    }
 }
 .car__wheel {
-   transform: translate;
    animation: rotate-wheel 3s linear 3s;
 }
 @keyframes rotate-wheel {
