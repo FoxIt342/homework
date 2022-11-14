@@ -1,0 +1,248 @@
+body {
+   background-color: #76aed0;
+}
+.wrapper {
+   overflow: hidden;
+   min-height: 100%;
+   position: relative;
+   max-width: 1250px;
+   margin: 0 auto;
+}
+.title h1 {
+   margin: 0 auto;
+   font-weight: 700;
+   font-size: 40px;
+   text-align: center;
+   margin: 25px;
+   animation: title 3s ease;
+}
+@keyframes title {
+   0% {
+   transform: translate(0px,100%);
+   opacity: 0;
+   }
+   50% {
+   transform: translate(0px,0%);
+   opacity: 1;
+   }
+   75% {
+      transform: scale(1.5);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+.subtitle h2 {
+   font-weight: 500;
+   font-size: 36px;
+   text-align: center;
+   margin-bottom: 30px;
+   animation: subtitle 2s ease;
+}
+@keyframes subtitle {
+   0% {
+   transform: translate(100%,0px);
+   opacity: 0;
+   }
+   100% {
+   transform: translate(0%,0px);
+   opacity: 1;
+   }
+}
+.practice {
+   width: 1100px;
+   height: 700px;
+   margin: 0 auto;
+   background: url("../img/background.jpg") no-repeat center;
+   background-size: cover;
+}
+
+.car__main {
+   width: 350px;
+   height: 100px;
+   border-radius: 93px 94px 29px 29px;
+   background-color: #096222;
+}
+.car__wheel {
+   width: 60px;
+   height: 60px;
+   background-color: black;
+   border-radius: 50%;
+   border: dashed 3px #c6d4cf;
+}
+.wheel-one {
+   position: absolute;
+   left: 30px;
+   top: 65px;
+}
+.wheel-two {
+   position: absolute;
+   left: 250px;
+   top: 65px;
+}
+.car__front-window {
+width: 50px;
+height: 50px;
+background: #38c6ea;
+border-radius: 0px 93px 0px 0px;
+position: absolute;
+left: 295px;
+top: 5px;
+}
+.window-one {
+   width: 50px;
+   height: 50px;
+   background: #38c6ea;
+   position: absolute;
+   left: 80px;
+   top: 5px;
+}
+.window-two {
+   width: 50px;
+   height: 50px;
+   background: #38c6ea;
+   position: absolute;
+   left: 150px;
+   top: 5px; 
+}
+.window-three {
+   width: 50px;
+   height: 50px;
+   background: #38c6ea;
+   position: absolute;
+   left: 220px;
+   top: 5px;
+}
+.car {
+   position: absolute;
+   top: 570px;
+   left: 60px;
+   animation: driving 3s linear forwards 3s;
+}
+@keyframes driving {
+   0% {
+   transform: translate(60px);
+   }
+   100% {
+   transform: translate(550px);
+   }
+}
+.car__wheel {
+   transform: translate;
+   animation: rotate-wheel 3s linear 3s;
+}
+@keyframes rotate-wheel {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+.window-one:hover {
+   background: url("../img/cat.webp") no-repeat center;
+   background-size: cover;
+   transition: all ease 0.3s;
+}
+.window-two:hover {
+   background: url("../img/chihuahua.webp") no-repeat center;
+   background-size: cover;
+   transition: all ease 0.3s;
+}
+.window-three:hover {
+   background: url("../img/dog2.jpg") no-repeat center;
+   background-size: cover;
+   transition: all ease 0.3s;
+}
+.car__front-window:hover {
+   background-color: #dbe8c9;
+   transition: background-color 3s ease 1s;
+}
+.traffic-light__rod {
+   width: 10px;
+   height: 200px;
+   background-color: #272424;
+   position: absolute;
+   right: 150px;
+   bottom: 15px;
+}
+.traffic-light__head {
+   width: 35px;
+   height: 90px;
+   background-color: #272424;
+   position: absolute;
+   right: 140px;
+   bottom: 200px;
+}
+.traffic-lights {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   position: absolute;
+   right: 147px;
+}
+.red-light {
+   background-color: red;
+   bottom: 260px;
+   animation: blinking 3s linear infinite;
+}
+.yellow-light {
+   background-color: #f4fc0a;
+   bottom: 235px;
+   animation: blinking 3s linear 1s infinite;
+}
+.green-light {
+   background-color: #17b717;
+   bottom: 210px;
+   animation: blinking 3s ease 2s infinite;
+}
+
+@keyframes blinking {
+   0% {
+   background-color: red;
+   }
+   50% {
+   background-color: yellow;
+   }
+   100% {
+   background-color: #096222;
+   }
+}
+.sun__circle-one {
+   width: 50px;
+   height: 50px;
+   background-color: #fce80a;
+   position: absolute;
+   left: 600px;
+   top: 250px;
+   border-radius: 50%;
+   z-index: 5;
+}
+.sun__circle {
+   width: 50px;
+   height: 50px;
+   background-color: #f4fc0a9e;
+   position: absolute;
+   left: 600px;
+   top: 250px;
+   border-radius: 200px 0px 200px 0px;
+   
+}
+.sun__container .circle__two {
+   animation: sun-rotate 5s linear infinite 0.3s;
+}
+
+.sun__container .circle__three {
+   animation: sun-rotate 5s linear infinite 1.2s;
+}
+.sun__container .circle__four {
+   animation: sun-rotate 5s linear infinite 1.9s;
+}
+@keyframes sun-rotate {
+   0% {
+   transform: rotate(0deg);
+   }
+   100% {
+   transform: rotate(360deg);
+   }
+}
