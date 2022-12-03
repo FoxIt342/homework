@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+body {
+   font-family: "Lato";
+   color: #424551;
+}
+.wrapper {
+   overflow: hidden;
+   min-height: 100%;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.wrapper > main {
+   flex-grow: 1;
+}
+.page {
+   max-width: 1275px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   position: relative;
+}
+/* ========================= */
+.page__form {
+   display: flex;
+   gap: 105px;
+   margin-top: 30px;
+   justify-content: space-between;
+}
+.form-page__left {
+   flex: 0 0 35%;
+   align-self: center;
+}
+.form-page__left img {
+   max-width: 100%;
+}
+.form-page__right {
+   flex: 0 0 65%;
+}
+
+h2 {
+   color: #1E212C;
+   font-weight: 700;
+   line-height: 150%;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   margin-bottom: 8px;
+   line-height: 150%;
+}
+h1 {
+   font-weight: 900;
+   line-height: 130%;
+   font-size: 46px;
+   line-height: 130%;
+   color: #1E212C;
+   margin-bottom: 40px;
+}
+.form__block {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 25px;
+   flex-basis: 50%;
+}
+
+.form__input {
+   width: 340px;
+   height: 50px;
+   padding-left: 16px;
+   border: 1px solid #D7DADD;
+   border-radius: 4px;   
+}
+.form__input::placeholder {
+   color: #9A9CA5;
+}
+.form__label {
+   display: block;
+   margin-bottom: 8px;
+}
+.form__message {
+   flex-basis: 705px;
+   margin-bottom: 23px;
+}
+
+.form__area {
+   width: 705px;
+   min-height: 128px;
+   max-height: 300px;
+   resize: vertical;
+   padding: 13px 16px;
+   border: 1px solid #D7DADD;
+   border-radius: 4px;
+}
+.form__area::placeholder {
+   color: #9A9CA5;
+}
+.form__actions {
+   display: flex;
+   gap: 50px;
+}
+.form__checkbox {
+   display: flex;
+   width: 315px;
+   position: relative;
+}
+.form__input--check {
+   position: absolute;
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+.form__checkbox .form__label {
+   padding-left: 28px;
+   line-height: 160%;
+   cursor: pointer;
+   display: inline-flex;
+   gap: 12px;
+}
+.form__checkbox .form__label::before {
+   content: "";
+   position: absolute;
+   flex: 0 0 16px;
+   top: 5px;
+   left: 0;
+   width: 16px;
+   height: 16px;
+   border: 1px solid #D7DADD;
+   border-radius: 4px;
+}
+.form__input--check:focus + .form__label::before {
+   background: linear-gradient(55.95deg, rgba(227, 63, 57, 0.332) 0%, rgba(244, 105, 24, 0.352) 100%);
+}
+.form__input--check:checked + .form__label::before {
+   background: url("../img/icons/checked.svg") center no-repeat;
+}
+
