@@ -30,7 +30,7 @@ body {
 }
 .form-page__left {
    flex: 0 0 35%;
-   align-self: center;
+   margin-top: 68px;
 }
 .form-page__left img {
    max-width: 100%;
